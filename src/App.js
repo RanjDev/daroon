@@ -5,10 +5,11 @@ import About from "./pages/About";
 import TheNavbar from "./components/TheNavbar";
 import Experiences from "./pages/Experiences";
 import Services from "./pages/Services";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col justify-between">
       <TheNavbar />
 
       <Routes>
@@ -17,6 +18,8 @@ function App() {
         <Route path="/experience" element={<Experiences />}></Route>
         <Route path="/services" element={<Services />}></Route>
       </Routes>
+
+      <Footer />
     </div>
   );
 }
