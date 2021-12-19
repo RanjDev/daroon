@@ -41,7 +41,7 @@ export default function TheNavbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <NavLink
                     to="/"
-                    className="flex items-center justify-center text-white text-sm font-sans font-semibold h-8 w-auto text-center
+                    className="flex items-center justify-center text-white text-lg font-sans font-semibold h-8 w-auto text-center
                     hover:bg-gray-700 hover:text-white  px-4 py-2 transition-all duration-300 rounded"
                   >
                     Daroon
@@ -56,7 +56,7 @@ export default function TheNavbar() {
                         className={({ isActive }) =>
                           isActive
                             ? "bg-gray-900 text-white text-sm rounded px-4 py-2"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white block px-4 py-2 text-sm transition-all duration-300 rounded "
+                            : "text-gray-100 hover:bg-gray-700 hover:text-white block px-4 py-2 text-sm transition-all duration-300 rounded "
                         }
                       >
                         {item.name}
