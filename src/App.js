@@ -26,11 +26,7 @@ function App() {
         <Route path="/appointment/:id" element={<AppointmentPage />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
-<<<<<<< HEAD
         <Route path="/profile/:id" element={<UserProfile />}></Route>
-=======
-        <Route path="/profile" element={<UserProfile />}></Route>
->>>>>>> a88f8ebdf561272c16b4b358edd798b96118939c
       </Routes>
 
       <Footer />
