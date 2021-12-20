@@ -1,9 +1,11 @@
 import React from "react";
 import { FaPhone } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 
 export default function OneDoctor() {
   const doctor = {
+    id: 123433,
     name: "Zana",
     description: "zammantrin dktor lasar kuray arz",
     num: 222,
@@ -31,9 +33,12 @@ export default function OneDoctor() {
         </Fade>
         <Fade triggerOnce>
           <div className=" flex justify-center items-center">
-            <button className="bg-teal-500 w-1/3 hover:bg-teal-600 transition-all transform ease-in text-white my-2  py-1 px-2 rounded">
+            <Link
+              to={`/appointment/${doctor.id}`}
+              className="bg-teal-500 w-1/3 hover:bg-teal-600 transition-all transform ease-in text-white my-2  py-1 px-2 rounded"
+            >
               Set an Appointment Now
-            </button>
+            </Link>
           </div>
         </Fade>
       </div>

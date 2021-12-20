@@ -7,6 +7,7 @@ import Experiences from "./pages/Experiences";
 import Services from "./pages/Services";
 import Footer from "./components/Footer";
 import Doctors from "./pages/Doctors";
+import AppointmentPage from "./pages/AppointmentPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/experience" element={<Experiences />}></Route>
         <Route path="/services" element={<Services />}></Route>
         <Route path="/doctors" element={<Doctors />}></Route>
+        <Route path="/appointment/:id" element={<AppointmentPage />}></Route>
       </Routes>
 
       <Footer />

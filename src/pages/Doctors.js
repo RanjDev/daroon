@@ -22,7 +22,7 @@ export default function Doctors() {
   ];
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center my-4">
+      <div className="flex flex-col justify-center items-center my-12">
         <Fade triggerOnce>
           <h2 className="text-2xl font-bold">Doctors</h2>
         </Fade>
@@ -32,9 +32,14 @@ export default function Doctors() {
           return (
             <Fade triggerOnce>
               <div
-                className="flex flex-col justify-between items-center m-2 gap-5 rounded-sm bg-slate-100"
+                className="flex justify-around items-center m-2 gap-5 rounded-sm bg-slate-100 py-4 my-3"
                 key={index}
               >
+                <img
+                  className="inline object-cover w-16 h-16 mr-2 rounded-full"
+                  src="https://myteledoc.app/wp-content/uploads/2020/09/happy-young-female-doctor-smiling-and-looking-at-c-WDEKYYG.jpg"
+                  alt=""
+                />
                 <h1 className="font-bold text-xl py-2">{key.name}</h1>
                 <h1 className="text-base text-teal-500">{key.description}</h1>
                 <h1 className="text-base text-gray-700 py-2">{key.number}</h1>
