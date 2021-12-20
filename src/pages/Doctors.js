@@ -1,20 +1,23 @@
 import React from "react";
-import OneDoctor from "./OneDoctor";
 import { Fade } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 
 export default function Doctors() {
   const doctors = [
     {
+      id: 1234,
       name: "Zana",
       description: "Dktory daruni Shazara la bwary",
       number: 9991413,
     },
     {
+      id: 1234,
       name: "Shaima",
       description: "Dktory daruni Shazara la bwary",
       number: 5550101,
     },
     {
+      id: 1234,
       name: "Shushu",
       description: "Dktory daruni Shazara la bwary",
       number: 666666,
@@ -40,7 +43,12 @@ export default function Doctors() {
                   src="https://myteledoc.app/wp-content/uploads/2020/09/happy-young-female-doctor-smiling-and-looking-at-c-WDEKYYG.jpg"
                   alt=""
                 />
-                <h1 className="font-bold text-xl py-2">{key.name}</h1>
+                <Link
+                  to={`/profile/${key.id}`}
+                  className="font-bold text-xl py-2"
+                >
+                  {key.name}
+                </Link>
                 <h1 className="text-base text-teal-500">{key.description}</h1>
                 <h1 className="text-base text-gray-700 py-2">{key.number}</h1>
               </div>
@@ -48,7 +56,6 @@ export default function Doctors() {
           );
         })}
       </div>
-      <OneDoctor />
     </div>
   );
 }
