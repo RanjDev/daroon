@@ -7,7 +7,13 @@ import Experiences from "./pages/Experiences";
 import Services from "./pages/Services";
 import Footer from "./components/Footer";
 import Doctors from "./pages/Doctors";
+<<<<<<< HEAD
 import AppointmentPage from "./pages/AppointmentPage";
+=======
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import UserProfile from "./pages/UserProfile";
+>>>>>>> c68c7fbe72a40b8a59b826804d9f2eabb3f852db
 
 function App() {
   return (
@@ -20,7 +26,13 @@ function App() {
         <Route path="/experience" element={<Experiences />}></Route>
         <Route path="/services" element={<Services />}></Route>
         <Route path="/doctors" element={<Doctors />}></Route>
+<<<<<<< HEAD
         <Route path="/appointment/:id" element={<AppointmentPage />}></Route>
+=======
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/register" element={<Register />}></Route>
+        <Route path="/profile" element={<UserProfile />}></Route>
+>>>>>>> c68c7fbe72a40b8a59b826804d9f2eabb3f852db
       </Routes>
 
       <Footer />
