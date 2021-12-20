@@ -106,7 +106,20 @@ export default function TheNavbar() {
                           </NavLink>
                         )}
                       </Menu.Item>
-
+                      <Menu.Item>
+                        {({ active }) => (
+                          <NavLink
+                            to="/login"
+                            className={({ isActive }) =>
+                              isActive
+                                ? "bg-gray-100 block px-4 py-2 text-sm text-gray-700"
+                                : "block px-4 py-2 text-sm text-gray-700"
+                            }
+                          >
+                            Login
+                          </NavLink>
+                        )}
+                      </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
                           <button
