@@ -8,9 +8,6 @@ export default function Home() {
         className="m-4 h-3/4 w-3/4  flex flex-col items-center
        justify-evenly rounded"
       >
-        {/* <p className="self-start m-4">
-          It is okay to not feel alright all the time.
-        </p> */}
         <div className=" w-full flex justify-around items-center overflow-hidden">
           <img className="h-60 m-16" src={Love} alt="Ribbon Icon" />
           <div className="text-lg font-semibold h-1/2 flex flex-col justify-end">
