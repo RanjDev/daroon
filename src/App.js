@@ -6,10 +6,13 @@ import TheNavbar from "./components/TheNavbar";
 import Experiences from "./pages/Experiences";
 import Services from "./pages/Services";
 import Footer from "./components/Footer";
+import Doctors from "./pages/Doctors";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
-    <div className="flex flex-col justify-between">
+    <div className="flex flex-col justify-around">
       <TheNavbar />
 
       <Routes>
@@ -17,6 +20,9 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/experience" element={<Experiences />}></Route>
         <Route path="/services" element={<Services />}></Route>
+        <Route path="/doctors" element={<Doctors />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/register" element={<Register />}></Route>
       </Routes>
 
       <Footer />

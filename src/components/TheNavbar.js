@@ -8,6 +8,7 @@ const navigation = [
   { name: "About Us", href: "/about" },
   { name: "Experience", href: "/experience" },
   { name: "Services", href: "/services" },
+  { name: "Doctors", href: "/doctors" },
 ];
 
 export default function TheNavbar() {
@@ -15,9 +16,9 @@ export default function TheNavbar() {
     <Disclosure as="nav" className="bg-teal-500 ">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-2  sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button
                   className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 
@@ -37,7 +38,7 @@ export default function TheNavbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex-1 flex items-center justify-center md:items-stretch md:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <NavLink
                     to="/"
@@ -47,7 +48,7 @@ export default function TheNavbar() {
                     Daroon
                   </NavLink>
                 </div>
-                <div className="hidden sm:block sm:ml-6">
+                <div className="hidden md:block md:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <NavLink
@@ -67,15 +68,15 @@ export default function TheNavbar() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* Profile dropdown */}
-                <Menu as="div" className="ml-3 relative z-10">
+                <Menu as="div" className=" relative z-10">
                   <div>
                     <Menu.Button
                       className="bg-gray-800 flex text-sm rounded-full focus:outline-none
                      focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                     >
-                      <span className="sr-only">Open user menu</span>
+                      {/* <span className="sr-only">Open user menu</span> */}
                       <img
-                        className="h-8 w-8 rounded-full"
+                        className="h-8 w-8  rounded-full"
                         src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
                         alt="user profile"
                       />
@@ -130,7 +131,7 @@ export default function TheNavbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <NavLink

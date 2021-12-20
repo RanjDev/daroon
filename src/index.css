@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.svg-rot {
+  transition: all 0.3s ease-out;
+}
+.svg-rot:hover {
+  transform: rotate(1deg);
+}
