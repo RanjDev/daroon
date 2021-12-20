@@ -43,7 +43,7 @@ export default function TheNavbar() {
                   <NavLink
                     to="/"
                     className="flex items-center justify-center text-white text-lg font-sans font-semibold h-8 w-auto text-center
-                    hover:bg-gray-700 hover:text-white  px-4 py-2 transition-all duration-300 rounded"
+                     transform hover:-translate-y-1 hover:text-white  px-4 py-2 transition-all duration-300 rounded"
                   >
                     Daroon
                   </NavLink>
@@ -56,8 +56,8 @@ export default function TheNavbar() {
                         to={item.href}
                         className={({ isActive }) =>
                           isActive
-                            ? "bg-gray-900 text-white text-sm rounded px-4 py-2"
-                            : "text-gray-100 hover:bg-gray-700 hover:text-white block px-4 py-2 text-sm transition-all duration-300 rounded "
+                            ? "border-b-2  text-white text-sm px-4 py-2"
+                            : "text-gray-100 transform hover:-translate-y-0.5 hover:text-white block px-4 py-2 text-sm transition-all duration-500"
                         }
                       >
                         {item.name}
