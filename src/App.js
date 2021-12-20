@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Doctors from "./pages/Doctors";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import UserProfile from "./pages/UserProfile";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/doctors" element={<Doctors />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
+        <Route path="/profile" element={<UserProfile />}></Route>
       </Routes>
 
       <Footer />
